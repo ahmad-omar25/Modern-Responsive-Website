@@ -1,0 +1,148 @@
+/*====================================================
+    DEFAULT VALUES:
+
+    Font Family     : Roboto Condensed
+    
+    Greenish Blue   : #34c6d3    (Buttons, Icons, Links, Lines & Backgrounds)
+    Steel Gray      : #41464b    (Headings)
+    Blue Bayoux     : #64707b    (Paragraphs)
+    White           : #fff       (Text With Black Backgrounds)
+    Black           : #000 
+
+======================================================*/
+
+/* General CSS */
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+p {
+    color: $paragraphs;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+h3 {
+    color: $headingColor;
+    text-transform: uppercase;
+}
+
+/*====================================================
+                        PARALLAX (Generic)
+======================================================*/
+
+.bg-parallax {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+/*====================================================
+                       ANIMATE
+======================================================*/
+
+#home 
+{
+    .cover,
+    .heading,
+    .btn 
+    {
+        -webkit-animation-duration: .5s;
+        animation-duration: .5s;
+    }
+    .heading 
+    {
+        -webkit-animation-delay: .5s;
+        animation-delay: .5s;
+    }
+    .home-btn 
+    {
+        -webkit-animation-delay: 1s;
+        animation-delay: 1s;
+    } 
+}
+
+
+/*====================================================
+                       CONTENT (Generic)
+======================================================*/
+
+.content-box {
+    padding: 60px 0 60px 0;
+}
+
+.content-title h3 {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0 30px 0;
+    @media (max-width: 991px)
+    {
+        font-size: 25px;
+        margin: 0 0 15px 0;
+    }
+    @media (max-width: 480px) 
+    {
+        font-size: 20px;
+        margin: 0 0 15px 0;
+    }
+}
+
+.content-title-white h3 {
+    color: #fff;
+}
+
+.content-title-underline {
+    width: 30px;
+    height: 3px;
+    background-color: $firstColor;
+    margin: 0 auto 30px auto;
+}
+
+
+/*====================================================
+                       SOCIAL
+======================================================*/
+
+.social-list 
+{
+    padding-left: 0;
+}
+
+.social-list li {
+    list-style: none;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-right: 6px;
+    margin-top: 10px;
+}
+
+.social-icon i 
+{
+    font-size: 17px;
+    transition: all .3s ease-in-out;
+}
+
+.icon-gray i 
+{
+    color: $paragraphs;
+}
+
+.icon-white i 
+{
+    color: #fff;
+}
+
+.social-icon i:hover 
+{
+    color: $firstColor;
+}

@@ -1,0 +1,62 @@
+/*====================================================
+                       CONTACT
+======================================================*/
+
+#contact 
+{
+    background-color: $headingColor;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    border-top: 5px solid rgba(0, 0, 0, 0.1);
+    .contact-left
+    {
+        h3
+        {
+            color: #fff;
+            font-size: 27px;
+            font-weight: 700;
+            margin-bottom: 28px;
+        }
+        p 
+        {
+            color: #fff;
+            margin-bottom: 30px;
+        }
+        .contact-info 
+        {
+            background-image: url("../img/contact/world-map.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            address 
+            {
+                color: #fff;
+                strong 
+                { 
+                    font-size: 16px; 
+                }
+            }
+            
+        }
+    }
+    .contact-right
+    {
+        h3
+        {
+            color: #fff;
+            font-size: 27px;
+            font-weight: 700;
+            margin-bottom: 28px;
+        }
+        form .form-control 
+        {
+            background: transparent;
+            border-radius: 0;
+            border-color: #fff;
+            font-size: 17px;
+            font-weight: 300;
+            padding: 8px 16px;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+    }
+}

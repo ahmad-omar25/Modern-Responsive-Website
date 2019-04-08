@@ -1,0 +1,59 @@
+/*====================================================
+                        BUTTONS (Generic)
+======================================================*/
+
+.btn-general 
+{
+    border-width: 2px;
+    border-radius: 0;
+    padding: 10px 22px;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+    transition: all .4s ease-in-out;
+    @media (max-width: 991px)
+    {
+        padding: 10px 17px;
+        font-size: 13px;
+    }
+    @media (max-width: 480px) 
+    {
+        font-size: 11px;
+        padding: 7px 10px;
+    }
+}
+
+
+.btn-white {
+    border-color: #fff;
+    color: #fff;
+    &:hover,
+    :focus
+    {
+        background-color: #fff;
+        color: $headingColor;
+    }
+}
+
+
+.btn-blue {
+    border-color: $firstColor;
+    color: $firstColor;
+    &:hover,
+    :focus
+    {
+        background-color: $firstColor;
+        color: #fff;
+    }
+}
+
+
+.btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 22px;
+    padding: 3px 15px;
+    border-radius: 0;
+    display: none;
+}

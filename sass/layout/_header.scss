@@ -1,0 +1,39 @@
+/*====================================================
+                        Header
+======================================================*/
+
+#home {
+    height: 100%;
+    background-image: url("../img/bg-home.jpg");
+    .cover 
+    {
+        height: 100%;
+        width: 100%;
+        .content-box
+        {
+            width: 100%;
+            height: 100%;
+            display: table;
+            .content-box-inner
+            {
+                display: table-cell;
+                vertical-align: middle;
+                .heading h3
+                {
+                    color: #fff;
+                    font-size: 45px;
+                    font-weight: 700;
+                    margin: 20px auto;
+                    @media (max-width: 991px)
+                    {
+                        font-size: 30px;
+                    }
+                    @media (max-width: 480px) 
+                    {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
